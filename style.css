@@ -144,3 +144,138 @@
 }
 
 
+.ex-9-img{
+    transition: filter 2s, border-radius 2s, width 2s, margin 2s;
+}
+.ex-9-img:hover{
+    filter: sepia(0.7) grayscale(0.3);
+    border-radius: 20px;
+    width: 600px;
+    margin: 0%
+}
+
+
+.ex-10-icon {
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(1turn);
+    }
+}
+
+
+.ex-11-icon:hover{
+    animation: spinreverse  2s linear;
+}
+@keyframes spinreverse {
+    0%{
+        transform: rotate(0);
+    }
+    75%{
+        transform: rotate(315deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+
+
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: movebottontop 2s linear;
+}
+@keyframes movebottontop {
+    0%{
+        left: 10%;
+    }
+    50%{
+        left: calc(100% - 75px);
+    }
+    100%{
+        left: 10%;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: movebuttonbottom 2s linear;
+}
+@keyframes movebuttonbottom {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 70px);
+    }
+    100% {
+        right: 20%;
+    }
+}
+
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: movearoundbuttontop 2s;
+}
+@keyframes movearoundbuttontop {
+    0%{
+        left: 10%;
+    }
+    25%{
+        left: 80%; 
+        top: -10px;
+    }
+    50%{
+        left: 80%;
+        top: 60px;
+    }
+    75%{
+        left: -5%;
+        top: 60px;
+    }
+    90%{
+        left: -5%;
+        top: -10px
+    }
+    100%{
+        left: 10%;
+        top: -10px
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: movearoundbuttonbottom 2s;
+}
+@keyframes movearoundbuttonbottom {
+    0%{
+        right: 20%;
+    }
+    25%{
+        right: 80%; 
+        bottom: -10px;
+    }
+    50%{
+        right: 80%;
+        bottom: 60px;
+    }
+    75%{
+        right: -5%;
+        bottom: 60px;
+    }
+    90%{
+        right: -5%;
+        bottom:-10px;
+    }
+    100%{
+        right: 20%;
+        bottom: -10px
+    }
+}
+
+
+
+
+
+
+
+
+
+
